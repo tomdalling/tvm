@@ -44,7 +44,7 @@ export default {
     const virtualMachine = new VirtualMachine
     return {
       virtualMachine,
-      sourceCode: "PIX red; FRM\nPIX green; FRM\nPIX blue; FRM\nJMP 0",
+      sourceCode: "start:\nPIX red; FRM\nPIX green; FRM\nPIX blue; FRM\nJMP start",
       display: virtualMachine.display,
       timer: null,
       isPaused: true,
